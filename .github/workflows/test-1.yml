@@ -39,8 +39,7 @@ jobs:
 
       - name: Build split APKs
         run: |
-          flet build apk \
-            --split-per-abi
+          yes | flet build apk --split-per-abi
 
       - name: Upload APKs
         uses: actions/upload-artifact@v4
