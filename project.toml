@@ -1,0 +1,42 @@
+[project]
+name = "flet-app"
+version = "1.0.1"
+description = "Tap the button, watch the number grow — the classic counter everyone starts with."
+requires-python = "==3.14"
+authors = [
+    { name = "Flet developer", email = "you@example.com" }
+]
+dependencies = [
+    "flet>=0.86"
+]
+
+[dependency-groups]
+dev = [
+    "flet-cli",
+    "flet-desktop",
+    "flet-web"
+]
+
+[tool.flet.metadata]
+title = "Counter"
+
+[tool.flet.gallery]
+categories = ["Getting Started"]
+
+[tool.flet]
+org = "dev.flet"
+company = "Flet"
+copyright = "Copyright (C) 2023-2026 by Flet"
+
+
+[tool.flet.boot_screen.flet]
+theme_mode = "auto"                       # auto (default), light, or dark
+bgcolor_light = "#ffffff"
+bgcolor_dark = "#000000"
+spinner_color_light = "blue"
+spinner_color_dark = "yellow"
+spinner_size = 30                         # 0 or absent → no spinner
+text_color_light = "#000000"
+text_color_dark = "#ffffff"
+prepare_message = "Preparing your app…"   # Android only; empty/absent → no message
+startup_message = "Starting up…"          # empty/absent → no message
