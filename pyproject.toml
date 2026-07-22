@@ -12,9 +12,9 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "flet-cli",
-    "flet-desktop",
-    "flet-web"
+    "flet-cli>=0.86",
+    "flet-desktop>=0.86",
+    "flet-web>=0.86"
 ]
 
 [tool.flet.metadata]
@@ -28,6 +28,8 @@ org = "dev.flet"
 company = "Flet"
 copyright = "Copyright (C) 2023-2026 by Flet"
 
+[tool.flet.app]
+path = "src"
 
 [tool.flet.boot_screen.flet]
 theme_mode = "auto"                       # auto (default), light, or dark
